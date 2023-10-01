@@ -3,6 +3,8 @@
 # target: request
 #     rule
 
+all: main
+
 float.o: float.cpp
 	clang++ -c float.cpp
 
@@ -15,7 +17,6 @@ main.o: main.cpp
 main: main.o float.o print.o
 	clang++ -o main main.o float.o print.o
 
-all: main
 
 clean:
 	rm -f *.o main
