@@ -1,45 +1,74 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.0.0)
 
-project(float_calculator VERSION 1.0.2 LANGUAGES CXX)
+set( VAR a b c;d "e;f" 2.7 "Hello There" )
 
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
+list(APPEND VAR 1.6 XX)
+message( ${VAR} )
 
-set(lib1 my_math) # my_math is a string variable
-set(lib2 my_print) # my_print is a string variable
+list(REMOVE_AT VAR 2 -3)
+message( ${VAR} )
 
-message("[INFO]: Add subdirectory ${lib1}")
-add_subdirectory(my_math) # one subdirectory name 
+list(REMOVE_ITEM VAR a 2.7)
+message( ${VAR} )
 
-message("[INFO]: Add subdirectory ${lib2}")
-add_subdirectory(my_print) # another subdirectory name 
+list(INSERT VAR 2 XX 2.7)
+message( ${VAR} )
 
-message("[INFO]: subdirectory add done")
+list(REVERSE VAR)
+message( ${VAR} )
 
-# build target
-add_executable(float_calculator main.cpp)
-message("[INFO]: build target float_calculator")
+list( REMOVE_DUPLICATES VAR )
+message( ${VAR} )
 
-# you use either PUBLIC or PRIVATE here, better PRIVATE
-target_link_libraries(float_calculator PRIVATE my_math my_print)
-message("[INFO]: link target float_calculator")
+list( SORT VAR)
+message( ${VAR} )
 
-# Unqoted and Quoted, used for dealing with lists and spaces
-message("========")
-# set(VAR aa bb cc)
-set(VAR aa;bb;cc)
-#set(VAR "aa" "bb" "cc")
-#set(VAR "aa bb cc")
-#set(VAR "aa;bb;cc")
+list( LENGTH VAR len_var )
+list( GET VAR 2 5 6 sub_list )
 
-message(Unquoted: ${VAR})
+#Note: 'SUBLIST' and 'JOIN' subcommands were introduced in cmake version 3.12.4. if you have an older version, these commands won't work
 
-message(Quoted: "${VAR}")
-message("========")
+#list( SUBLIST VAR 2 3 sub_list2 )
+#list( JOIN VAR ++ str_list )
+list( FIND VAR XX find_var )
 
-#  set(VAR aa bb cc) sets VAR to a list of three items: aa, bb, and cc. 
-# When you use ${VAR} unquoted, CMake treats it as a list of three separate items. 
-# When you use "${VAR}" quoted, CMake treats it as a single string with spaces between the items: aa;bb;cc.
-# The semicolon (;) is the default list separator in CMake. When you quote a list variable, CMake joins the items with semicolons.
+message( "len_var: ${len_var}" )
+message( "sub_list: ${sub_list}" )
+#message( "sub_list2: ${sub_list2}" )
+#message( "str_list: ${str_list}" )
+message( "find_var: ${find_var}" )
 
-# To put it simple, when in "" it's a string, while not in "" it's a list.
+
+message("______STRING_____")
+set(VAR "CMake for Cross-Platform C++ Projects")
+
+string(FIND ${VAR} "for" find_var)
+message(${find_var})
+
+string(FIND ${VAR} "For" find_var)
+message(${find_var})
+
+
+string(REPLACE "Projects" "Project" replaced_var ${VAR} )
+message(${replaced_var})
+
+string(PREPEND replaced_var "Master ")
+message(${replaced_var})
+
+string(APPEND replaced_var " Building")
+message(${replaced_var})
+
+string(TOLOWER ${replaced_var} lower_case_var)
+message(${lower_case_var})
+
+string(TOUPPER ${lower_case_var} upper_case_var)
+message(${upper_case_var})
+
+
+string(COMPARE EQUAL ${upper_case_var} "MASTER CMAKE FOR CROSS-PLATFORM C++ PROJECT BUILDING"  equality_check_var)
+message(${equality_check_var})
+
+string(COMPARE GREATER ${upper_case_var} "some random string"  greater_check_var)
+message(${greater_check_var})
+
+# Run this using `cmake .. -LAH > config.log`, this will write the config info of CMake into the log and only print the mesasge to the console

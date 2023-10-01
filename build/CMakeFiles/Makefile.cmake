@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/CMakeLists.txt"
+  "CMakeFiles/3.24.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.24.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.24.3/CMakeSystem.cmake"
-  "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/my_math/CMakeLists.txt"
-  "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/my_print/CMakeLists.txt"
+  "/opt/local/share/cmake-3.24/Modules/CMakeCInformation.cmake"
   "/opt/local/share/cmake-3.24/Modules/CMakeCXXInformation.cmake"
   "/opt/local/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake"
   "/opt/local/share/cmake-3.24/Modules/CMakeGenericSystem.cmake"
@@ -19,11 +19,14 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/local/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake"
   "/opt/local/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake"
   "/opt/local/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/opt/local/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake"
   "/opt/local/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake"
   "/opt/local/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/opt/local/share/cmake-3.24/Modules/Compiler/Clang.cmake"
   "/opt/local/share/cmake-3.24/Modules/Compiler/GNU.cmake"
+  "/opt/local/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake"
   "/opt/local/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake"
+  "/opt/local/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake"
   "/opt/local/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake"
   "/opt/local/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake"
   "/opt/local/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake"
@@ -40,13 +43,8 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "my_math/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "my_print/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/float_calculator.dir/DependInfo.cmake"
-  "my_math/CMakeFiles/my_math.dir/DependInfo.cmake"
-  "my_print/CMakeFiles/my_print.dir/DependInfo.cmake"
   )
