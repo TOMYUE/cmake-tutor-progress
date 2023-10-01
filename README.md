@@ -14,34 +14,33 @@ So I think the best way to learn is following the git commit. I've try my best t
 3. [ ] multiple cpp files, build in command line scripts
 4. [ ] multiple cpp files, build with Makefile and Make
 5. [ ] multiple cpp files, build wtih Makefile with more concise Makefile syntaxes
-6. [ ] multiple cpp files, build with more more concise Makefile syntaxes
-7. [ ] multiple cpp files, building with CMake
-8. [ ] multiple cpp files, building with CMake, generating your own library and link it
-9. [ ] multiple cpp files, building with CMake with Sub-Directories
-10. [ ] multiple cpp files, building with CMake, managing header files
-11. [ ] multiple cpp files, building with CMake, better way of managing header files
-12. [ ] multiple cpp files, building with CMake, specify target properties
-13. [ ] multiple cpp files, building with CMake, add extra messages with normal variables
-14. [ ] multiple cpp files, building with CMake, add quoted and unquoted arguments
-15. [ ] multiple cpp files, building with CMake, add manipulating variables
-16. [ ] multiple cpp files, building with CMake, add lists and strings
-17. [ ] multiple cpp files, building with CMake, add if else command
-18. [ ] multiple cpp files, building with CMake, add loop command
-19. [ ] multiple cpp files, building with CMake, add functions
-20. [ ] multiple cpp files, building with CMake, add optional arguments of functions
-21. [ ] multiple cpp files, building with CMake, add scopes
-22. [ ] multiple cpp files, building with CMake, add Marcos
-23. [ ] multiple cpp files, building with CMake, add listfiles and modules
-24. [ ] multiple cpp files, building with CMake, add cache variable
-25. [ ] multiple cpp files, building with CMake, modify cache variables
-26. [ ] multiple cpp files, building with CMake, install process of packages
-27. [ ] multiple cpp files, building with CMake, export a package
-28. [ ] multiple cpp files, building with CMake, using a 3rd party pacakge in project
-29. [ ] multiple cpp files, building with CMake, add 3rd party Google Test
-30. [ ] App OpenCV
-31. [ ] GTK PC
-32. [ ] GTK find module
-33. [ ] find GTK3
+6. [ ] multiple cpp files, building with CMake
+7. [ ] multiple cpp files, building with CMake, generating your own library and link it
+8. [ ] multiple cpp files, building with CMake with Sub-Directories
+9.  [ ] multiple cpp files, building with CMake, managing header files
+10. [ ] multiple cpp files, building with CMake, better way of managing header files
+11. [ ] multiple cpp files, building with CMake, specify target properties
+12. [ ] multiple cpp files, building with CMake, add extra messages with normal variables
+13. [ ] multiple cpp files, building with CMake, add quoted and unquoted arguments
+14. [ ] multiple cpp files, building with CMake, add manipulating variables
+15. [ ] multiple cpp files, building with CMake, add lists and strings
+16. [ ] multiple cpp files, building with CMake, add if else command
+17. [ ] multiple cpp files, building with CMake, add loop command
+18. [ ] multiple cpp files, building with CMake, add functions
+19. [ ] multiple cpp files, building with CMake, add optional arguments of functions
+20. [ ] multiple cpp files, building with CMake, add scopes
+21. [ ] multiple cpp files, building with CMake, add Marcos
+22. [ ] multiple cpp files, building with CMake, add listfiles and modules
+23. [ ] multiple cpp files, building with CMake, add cache variable
+24. [ ] multiple cpp files, building with CMake, modify cache variables
+25. [ ] multiple cpp files, building with CMake, install process of packages
+26. [ ] multiple cpp files, building with CMake, export a package
+27. [ ] multiple cpp files, building with CMake, using a 3rd party pacakge in project
+28. [ ] multiple cpp files, building with CMake, add 3rd party Google Test
+29. [ ] App OpenCV
+30. [ ] GTK PC
+31. [ ] GTK find module
+32. [ ] find GTK3
 
 
 ---
