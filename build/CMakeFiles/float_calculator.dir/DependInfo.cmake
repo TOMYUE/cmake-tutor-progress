@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/float.cpp" "CMakeFiles/float_calculator.dir/float.cpp.o" "gcc" "CMakeFiles/float_calculator.dir/float.cpp.o.d"
   "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/main.cpp" "CMakeFiles/float_calculator.dir/main.cpp.o" "gcc" "CMakeFiles/float_calculator.dir/main.cpp.o.d"
   "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/print.cpp" "CMakeFiles/float_calculator.dir/print.cpp.o" "gcc" "CMakeFiles/float_calculator.dir/print.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/CMakeFiles/mymath.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

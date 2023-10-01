@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named mymath
+
+# Build rule for target.
+mymath: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mymath
+.PHONY : mymath
+
+# fast build rule for target.
+mymath/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymath.dir/build.make CMakeFiles/mymath.dir/build
+.PHONY : mymath/fast
+
+#=============================================================================
 # Target rules for targets named float_calculator
 
 # Build rule for target.
@@ -134,7 +147,7 @@ float.o: float.cpp.o
 
 # target to build an object file
 float.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/float_calculator.dir/build.make CMakeFiles/float_calculator.dir/float.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymath.dir/build.make CMakeFiles/mymath.dir/float.cpp.o
 .PHONY : float.cpp.o
 
 float.i: float.cpp.i
@@ -142,7 +155,7 @@ float.i: float.cpp.i
 
 # target to preprocess a source file
 float.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/float_calculator.dir/build.make CMakeFiles/float_calculator.dir/float.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymath.dir/build.make CMakeFiles/mymath.dir/float.cpp.i
 .PHONY : float.cpp.i
 
 float.s: float.cpp.s
@@ -150,7 +163,7 @@ float.s: float.cpp.s
 
 # target to generate assembly for a file
 float.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/float_calculator.dir/build.make CMakeFiles/float_calculator.dir/float.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymath.dir/build.make CMakeFiles/mymath.dir/float.cpp.s
 .PHONY : float.cpp.s
 
 main.o: main.cpp.o
@@ -210,6 +223,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... float_calculator"
+	@echo "... mymath"
 	@echo "... float.o"
 	@echo "... float.i"
 	@echo "... float.s"

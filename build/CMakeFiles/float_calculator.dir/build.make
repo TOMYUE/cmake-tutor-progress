@@ -83,24 +83,10 @@ CMakeFiles/float_calculator.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/float_calculator.dir/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/main.cpp" -o CMakeFiles/float_calculator.dir/main.cpp.s
 
-CMakeFiles/float_calculator.dir/float.cpp.o: CMakeFiles/float_calculator.dir/flags.make
-CMakeFiles/float_calculator.dir/float.cpp.o: /Users/tangyue/CSproj/Courses/CMake\ tutorial/cmake-tutor-progress/float.cpp
-CMakeFiles/float_calculator.dir/float.cpp.o: CMakeFiles/float_calculator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/float_calculator.dir/float.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/float_calculator.dir/float.cpp.o -MF CMakeFiles/float_calculator.dir/float.cpp.o.d -o CMakeFiles/float_calculator.dir/float.cpp.o -c "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/float.cpp"
-
-CMakeFiles/float_calculator.dir/float.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/float_calculator.dir/float.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/float.cpp" > CMakeFiles/float_calculator.dir/float.cpp.i
-
-CMakeFiles/float_calculator.dir/float.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/float_calculator.dir/float.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/float.cpp" -o CMakeFiles/float_calculator.dir/float.cpp.s
-
 CMakeFiles/float_calculator.dir/print.cpp.o: CMakeFiles/float_calculator.dir/flags.make
 CMakeFiles/float_calculator.dir/print.cpp.o: /Users/tangyue/CSproj/Courses/CMake\ tutorial/cmake-tutor-progress/print.cpp
 CMakeFiles/float_calculator.dir/print.cpp.o: CMakeFiles/float_calculator.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/float_calculator.dir/print.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/float_calculator.dir/print.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/float_calculator.dir/print.cpp.o -MF CMakeFiles/float_calculator.dir/print.cpp.o.d -o CMakeFiles/float_calculator.dir/print.cpp.o -c "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/print.cpp"
 
 CMakeFiles/float_calculator.dir/print.cpp.i: cmake_force
@@ -114,18 +100,17 @@ CMakeFiles/float_calculator.dir/print.cpp.s: cmake_force
 # Object files for target float_calculator
 float_calculator_OBJECTS = \
 "CMakeFiles/float_calculator.dir/main.cpp.o" \
-"CMakeFiles/float_calculator.dir/float.cpp.o" \
 "CMakeFiles/float_calculator.dir/print.cpp.o"
 
 # External object files for target float_calculator
 float_calculator_EXTERNAL_OBJECTS =
 
 float_calculator: CMakeFiles/float_calculator.dir/main.cpp.o
-float_calculator: CMakeFiles/float_calculator.dir/float.cpp.o
 float_calculator: CMakeFiles/float_calculator.dir/print.cpp.o
 float_calculator: CMakeFiles/float_calculator.dir/build.make
+float_calculator: libmymath.a
 float_calculator: CMakeFiles/float_calculator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable float_calculator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable float_calculator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/float_calculator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

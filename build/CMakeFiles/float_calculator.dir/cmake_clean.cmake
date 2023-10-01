@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/float_calculator.dir/float.cpp.o"
-  "CMakeFiles/float_calculator.dir/float.cpp.o.d"
   "CMakeFiles/float_calculator.dir/main.cpp.o"
   "CMakeFiles/float_calculator.dir/main.cpp.o.d"
   "CMakeFiles/float_calculator.dir/print.cpp.o"
