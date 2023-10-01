@@ -1,7 +1,5 @@
 #include <iostream>
 
-using namespace std;
-
 // add, sub, mul, div
 float add_float(float a, float b);
 float sub_float(float a, float b);
@@ -9,7 +7,7 @@ float mul_float(float a, float b);
 float div_float(float a, float b);
 
 // print results
-void print_res(string res_type, float res_val);
+void print_res(std::string res_type, float res_val);
 
 int main() {
     // set value
@@ -28,24 +26,4 @@ int main() {
     print_res("div", result_div);
 
     return 0;
-}
-
-float add_float(float a, float b) {
-    return a + b;
-}
-
-float sub_float(float a, float b) {
-    return a - b;
-}
-
-float mul_float(float a, float b) {
-    return a * b;
-}
-
-float div_float(float a, float b) {
-    return a / b;
-}
-
-void print_res(string res_type, float res_val) {
-    std::cout<< res_type<< " result:\t"<< res_val<< "\n";
 }
