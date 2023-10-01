@@ -130,29 +130,29 @@ my_math/fast:
 	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/build
 .PHONY : my_math/fast
 
-float.o: float.cpp.o
-.PHONY : float.o
+src/float.o: src/float.cpp.o
+.PHONY : src/float.o
 
 # target to build an object file
-float.cpp.o:
-	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/float.cpp.o
-.PHONY : float.cpp.o
+src/float.cpp.o:
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/src/float.cpp.o
+.PHONY : src/float.cpp.o
 
-float.i: float.cpp.i
-.PHONY : float.i
+src/float.i: src/float.cpp.i
+.PHONY : src/float.i
 
 # target to preprocess a source file
-float.cpp.i:
-	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/float.cpp.i
-.PHONY : float.cpp.i
+src/float.cpp.i:
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/src/float.cpp.i
+.PHONY : src/float.cpp.i
 
-float.s: float.cpp.s
-.PHONY : float.s
+src/float.s: src/float.cpp.s
+.PHONY : src/float.s
 
 # target to generate assembly for a file
-float.cpp.s:
-	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/float.cpp.s
-.PHONY : float.cpp.s
+src/float.cpp.s:
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/src/float.cpp.s
+.PHONY : src/float.cpp.s
 
 # Help Target
 help:
@@ -163,9 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... my_math"
-	@echo "... float.o"
-	@echo "... float.i"
-	@echo "... float.s"
+	@echo "... src/float.o"
+	@echo "... src/float.i"
+	@echo "... src/float.s"
 .PHONY : help
 
 

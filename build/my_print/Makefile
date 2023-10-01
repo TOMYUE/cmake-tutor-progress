@@ -130,29 +130,29 @@ my_print/fast:
 	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f my_print/CMakeFiles/my_print.dir/build.make my_print/CMakeFiles/my_print.dir/build
 .PHONY : my_print/fast
 
-print.o: print.cpp.o
-.PHONY : print.o
+src/print.o: src/print.cpp.o
+.PHONY : src/print.o
 
 # target to build an object file
-print.cpp.o:
-	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f my_print/CMakeFiles/my_print.dir/build.make my_print/CMakeFiles/my_print.dir/print.cpp.o
-.PHONY : print.cpp.o
+src/print.cpp.o:
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f my_print/CMakeFiles/my_print.dir/build.make my_print/CMakeFiles/my_print.dir/src/print.cpp.o
+.PHONY : src/print.cpp.o
 
-print.i: print.cpp.i
-.PHONY : print.i
+src/print.i: src/print.cpp.i
+.PHONY : src/print.i
 
 # target to preprocess a source file
-print.cpp.i:
-	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f my_print/CMakeFiles/my_print.dir/build.make my_print/CMakeFiles/my_print.dir/print.cpp.i
-.PHONY : print.cpp.i
+src/print.cpp.i:
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f my_print/CMakeFiles/my_print.dir/build.make my_print/CMakeFiles/my_print.dir/src/print.cpp.i
+.PHONY : src/print.cpp.i
 
-print.s: print.cpp.s
-.PHONY : print.s
+src/print.s: src/print.cpp.s
+.PHONY : src/print.s
 
 # target to generate assembly for a file
-print.cpp.s:
-	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f my_print/CMakeFiles/my_print.dir/build.make my_print/CMakeFiles/my_print.dir/print.cpp.s
-.PHONY : print.cpp.s
+src/print.cpp.s:
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f my_print/CMakeFiles/my_print.dir/build.make my_print/CMakeFiles/my_print.dir/src/print.cpp.s
+.PHONY : src/print.cpp.s
 
 # Help Target
 help:
@@ -163,9 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... my_print"
-	@echo "... print.o"
-	@echo "... print.i"
-	@echo "... print.s"
+	@echo "... src/print.o"
+	@echo "... src/print.i"
+	@echo "... src/print.s"
 .PHONY : help
 
 

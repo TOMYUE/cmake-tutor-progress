@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/my_print/print.cpp" "my_print/CMakeFiles/my_print.dir/print.cpp.o" "gcc" "my_print/CMakeFiles/my_print.dir/print.cpp.o.d"
+  "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/my_print/src/print.cpp" "my_print/CMakeFiles/my_print.dir/src/print.cpp.o" "gcc" "my_print/CMakeFiles/my_print.dir/src/print.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -1,8 +1,8 @@
 CMakeFiles/float_calculator.dir/main.cpp.o: \
   /Users/tangyue/CSproj/Courses/CMake\ tutorial/cmake-tutor-progress/main.cpp \
   /Users/tangyue/CSproj/Courses/CMake\ tutorial/cmake-tutor-progress/main.h \
-  /Users/tangyue/CSproj/Courses/CMake\ tutorial/cmake-tutor-progress/my_math/float.h \
-  /Users/tangyue/CSproj/Courses/CMake\ tutorial/cmake-tutor-progress/my_print/print.h \
+  /Users/tangyue/CSproj/Courses/CMake\ tutorial/cmake-tutor-progress/my_math/include/float.h \
+  /Users/tangyue/CSproj/Courses/CMake\ tutorial/cmake-tutor-progress/my_print/include/print.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iostream \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config_site \

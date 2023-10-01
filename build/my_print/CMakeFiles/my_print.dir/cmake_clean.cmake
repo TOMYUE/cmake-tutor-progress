@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/my_print.dir/print.cpp.o"
-  "CMakeFiles/my_print.dir/print.cpp.o.d"
+  "CMakeFiles/my_print.dir/src/print.cpp.o"
+  "CMakeFiles/my_print.dir/src/print.cpp.o.d"
   "libmy_print.a"
   "libmy_print.pdb"
 )

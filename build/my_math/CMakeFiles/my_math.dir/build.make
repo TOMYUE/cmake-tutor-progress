@@ -69,28 +69,28 @@ include my_math/CMakeFiles/my_math.dir/progress.make
 # Include the compile flags for this target's objects.
 include my_math/CMakeFiles/my_math.dir/flags.make
 
-my_math/CMakeFiles/my_math.dir/float.cpp.o: my_math/CMakeFiles/my_math.dir/flags.make
-my_math/CMakeFiles/my_math.dir/float.cpp.o: /Users/tangyue/CSproj/Courses/CMake\ tutorial/cmake-tutor-progress/my_math/float.cpp
-my_math/CMakeFiles/my_math.dir/float.cpp.o: my_math/CMakeFiles/my_math.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object my_math/CMakeFiles/my_math.dir/float.cpp.o"
-	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/my_math" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_math/CMakeFiles/my_math.dir/float.cpp.o -MF CMakeFiles/my_math.dir/float.cpp.o.d -o CMakeFiles/my_math.dir/float.cpp.o -c "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/my_math/float.cpp"
+my_math/CMakeFiles/my_math.dir/src/float.cpp.o: my_math/CMakeFiles/my_math.dir/flags.make
+my_math/CMakeFiles/my_math.dir/src/float.cpp.o: /Users/tangyue/CSproj/Courses/CMake\ tutorial/cmake-tutor-progress/my_math/src/float.cpp
+my_math/CMakeFiles/my_math.dir/src/float.cpp.o: my_math/CMakeFiles/my_math.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object my_math/CMakeFiles/my_math.dir/src/float.cpp.o"
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/my_math" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_math/CMakeFiles/my_math.dir/src/float.cpp.o -MF CMakeFiles/my_math.dir/src/float.cpp.o.d -o CMakeFiles/my_math.dir/src/float.cpp.o -c "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/my_math/src/float.cpp"
 
-my_math/CMakeFiles/my_math.dir/float.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_math.dir/float.cpp.i"
-	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/my_math" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/my_math/float.cpp" > CMakeFiles/my_math.dir/float.cpp.i
+my_math/CMakeFiles/my_math.dir/src/float.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_math.dir/src/float.cpp.i"
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/my_math" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/my_math/src/float.cpp" > CMakeFiles/my_math.dir/src/float.cpp.i
 
-my_math/CMakeFiles/my_math.dir/float.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_math.dir/float.cpp.s"
-	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/my_math" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/my_math/float.cpp" -o CMakeFiles/my_math.dir/float.cpp.s
+my_math/CMakeFiles/my_math.dir/src/float.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_math.dir/src/float.cpp.s"
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/my_math" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/my_math/src/float.cpp" -o CMakeFiles/my_math.dir/src/float.cpp.s
 
 # Object files for target my_math
 my_math_OBJECTS = \
-"CMakeFiles/my_math.dir/float.cpp.o"
+"CMakeFiles/my_math.dir/src/float.cpp.o"
 
 # External object files for target my_math
 my_math_EXTERNAL_OBJECTS =
 
-my_math/libmy_math.a: my_math/CMakeFiles/my_math.dir/float.cpp.o
+my_math/libmy_math.a: my_math/CMakeFiles/my_math.dir/src/float.cpp.o
 my_math/libmy_math.a: my_math/CMakeFiles/my_math.dir/build.make
 my_math/libmy_math.a: my_math/CMakeFiles/my_math.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmy_math.a"

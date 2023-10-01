@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/my_math.dir/float.cpp.o"
-  "CMakeFiles/my_math.dir/float.cpp.o.d"
+  "CMakeFiles/my_math.dir/src/float.cpp.o"
+  "CMakeFiles/my_math.dir/src/float.cpp.o.d"
   "libmy_math.a"
   "libmy_math.pdb"
 )

@@ -69,28 +69,28 @@ include my_print/CMakeFiles/my_print.dir/progress.make
 # Include the compile flags for this target's objects.
 include my_print/CMakeFiles/my_print.dir/flags.make
 
-my_print/CMakeFiles/my_print.dir/print.cpp.o: my_print/CMakeFiles/my_print.dir/flags.make
-my_print/CMakeFiles/my_print.dir/print.cpp.o: /Users/tangyue/CSproj/Courses/CMake\ tutorial/cmake-tutor-progress/my_print/print.cpp
-my_print/CMakeFiles/my_print.dir/print.cpp.o: my_print/CMakeFiles/my_print.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object my_print/CMakeFiles/my_print.dir/print.cpp.o"
-	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/my_print" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_print/CMakeFiles/my_print.dir/print.cpp.o -MF CMakeFiles/my_print.dir/print.cpp.o.d -o CMakeFiles/my_print.dir/print.cpp.o -c "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/my_print/print.cpp"
+my_print/CMakeFiles/my_print.dir/src/print.cpp.o: my_print/CMakeFiles/my_print.dir/flags.make
+my_print/CMakeFiles/my_print.dir/src/print.cpp.o: /Users/tangyue/CSproj/Courses/CMake\ tutorial/cmake-tutor-progress/my_print/src/print.cpp
+my_print/CMakeFiles/my_print.dir/src/print.cpp.o: my_print/CMakeFiles/my_print.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object my_print/CMakeFiles/my_print.dir/src/print.cpp.o"
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/my_print" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT my_print/CMakeFiles/my_print.dir/src/print.cpp.o -MF CMakeFiles/my_print.dir/src/print.cpp.o.d -o CMakeFiles/my_print.dir/src/print.cpp.o -c "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/my_print/src/print.cpp"
 
-my_print/CMakeFiles/my_print.dir/print.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_print.dir/print.cpp.i"
-	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/my_print" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/my_print/print.cpp" > CMakeFiles/my_print.dir/print.cpp.i
+my_print/CMakeFiles/my_print.dir/src/print.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_print.dir/src/print.cpp.i"
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/my_print" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/my_print/src/print.cpp" > CMakeFiles/my_print.dir/src/print.cpp.i
 
-my_print/CMakeFiles/my_print.dir/print.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_print.dir/print.cpp.s"
-	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/my_print" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/my_print/print.cpp" -o CMakeFiles/my_print.dir/print.cpp.s
+my_print/CMakeFiles/my_print.dir/src/print.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_print.dir/src/print.cpp.s"
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/my_print" && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/my_print/src/print.cpp" -o CMakeFiles/my_print.dir/src/print.cpp.s
 
 # Object files for target my_print
 my_print_OBJECTS = \
-"CMakeFiles/my_print.dir/print.cpp.o"
+"CMakeFiles/my_print.dir/src/print.cpp.o"
 
 # External object files for target my_print
 my_print_EXTERNAL_OBJECTS =
 
-my_print/libmy_print.a: my_print/CMakeFiles/my_print.dir/print.cpp.o
+my_print/libmy_print.a: my_print/CMakeFiles/my_print.dir/src/print.cpp.o
 my_print/libmy_print.a: my_print/CMakeFiles/my_print.dir/build.make
 my_print/libmy_print.a: my_print/CMakeFiles/my_print.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmy_print.a"
