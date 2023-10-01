@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libmymath.a"
+  "libmy_print.a"
 )

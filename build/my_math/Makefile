@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/CMakeFiles" "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build//CMakeFiles/progress.marks"
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(CMAKE_COMMAND) -E cmake_progress_start "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/CMakeFiles" "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/my_math//CMakeFiles/progress.marks"
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_math/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_math/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,81 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_math/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_math/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named float_calculator
+# Convenience name for target.
+my_math/CMakeFiles/my_math.dir/rule:
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_math/CMakeFiles/my_math.dir/rule
+.PHONY : my_math/CMakeFiles/my_math.dir/rule
 
-# Build rule for target.
-float_calculator: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 float_calculator
-.PHONY : float_calculator
-
-# fast build rule for target.
-float_calculator/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/float_calculator.dir/build.make CMakeFiles/float_calculator.dir/build
-.PHONY : float_calculator/fast
-
-#=============================================================================
-# Target rules for targets named my_math
-
-# Build rule for target.
-my_math: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_math
+# Convenience name for target.
+my_math: my_math/CMakeFiles/my_math.dir/rule
 .PHONY : my_math
 
 # fast build rule for target.
 my_math/fast:
-	$(MAKE) $(MAKESILENT) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/build
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/build
 .PHONY : my_math/fast
 
-#=============================================================================
-# Target rules for targets named my_print
-
-# Build rule for target.
-my_print: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 my_print
-.PHONY : my_print
-
-# fast build rule for target.
-my_print/fast:
-	$(MAKE) $(MAKESILENT) -f my_print/CMakeFiles/my_print.dir/build.make my_print/CMakeFiles/my_print.dir/build
-.PHONY : my_print/fast
-
-main.o: main.cpp.o
-.PHONY : main.o
+float.o: float.cpp.o
+.PHONY : float.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/float_calculator.dir/build.make CMakeFiles/float_calculator.dir/main.cpp.o
-.PHONY : main.cpp.o
+float.cpp.o:
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/float.cpp.o
+.PHONY : float.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+float.i: float.cpp.i
+.PHONY : float.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/float_calculator.dir/build.make CMakeFiles/float_calculator.dir/main.cpp.i
-.PHONY : main.cpp.i
+float.cpp.i:
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/float.cpp.i
+.PHONY : float.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+float.s: float.cpp.s
+.PHONY : float.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/float_calculator.dir/build.make CMakeFiles/float_calculator.dir/main.cpp.s
-.PHONY : main.cpp.s
+float.cpp.s:
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(MAKE) $(MAKESILENT) -f my_math/CMakeFiles/my_math.dir/build.make my_math/CMakeFiles/my_math.dir/float.cpp.s
+.PHONY : float.cpp.s
 
 # Help Target
 help:
@@ -187,12 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... float_calculator"
 	@echo "... my_math"
-	@echo "... my_print"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... float.o"
+	@echo "... float.i"
+	@echo "... float.s"
 .PHONY : help
 
 
@@ -204,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build" && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,4 +1,9 @@
-/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/CMakeFiles/mymath.dir
 /Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/CMakeFiles/float_calculator.dir
 /Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/CMakeFiles/edit_cache.dir
 /Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/CMakeFiles/rebuild_cache.dir
+/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/my_math/CMakeFiles/my_math.dir
+/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/my_math/CMakeFiles/edit_cache.dir
+/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/my_math/CMakeFiles/rebuild_cache.dir
+/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/my_print/CMakeFiles/my_print.dir
+/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/my_print/CMakeFiles/edit_cache.dir
+/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/my_print/CMakeFiles/rebuild_cache.dir

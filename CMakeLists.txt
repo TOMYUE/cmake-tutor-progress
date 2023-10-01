@@ -1,31 +1,28 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(
-    float_calculator
-    VERSION 1.0.1
-    LANGUAGES CXX    
-)
+project(float_calculator VERSION 1.0.2 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 
-# TODO: add a library
-add_library(mymath float.h float.cpp)
+# add sub directory, see the CMakeLists.txt in the two subdirectories
+add_subdirectory(my_math)
+add_subdirectory(my_print)
 
-add_executable(
-    float_calculator 
-    main.cpp 
-    print.cpp
-)
+# build target
+add_executable(float_calculator main.cpp)
 
-# PRIVATE means that the library is only required for the target itself 
-# and should not be propagated to other targets that depend on the target. 
-# This is useful when you have a library that is only used internally within 
-# a specific target and should not be exposed to other targets or consumers of the target.
-target_link_libraries(float_calculator PRIVATE mymath)
+# you use either PUBLIC or PRIVATE here, better PRIVATE
+target_link_libraries(float_calculator PUBLIC my_math my_print)
 
-# after the make, you will see a library in .a suffix under your build directory
-# > ls
-# CMakeCache.txt      Makefile            float_calculator
-# CMakeFiles          cmake_install.cmake libmymath.a
-# this is the library you build using add_library
+# This time when you see the outpu of make, you will find it linke the library you defined using add_library
+# > make -j $(nproc)
+# [ 33%] Building CXX object my_math/CMakeFiles/my_math.dir/float.cpp.o
+# [ 33%] Building CXX object my_print/CMakeFiles/my_print.dir/print.cpp.o
+# [ 50%] Linking CXX static library libmy_math.a
+# [ 50%] Built target my_math
+# [ 66%] Linking CXX static library libmy_print.a
+# [ 66%] Built target my_print
+# [ 83%] Building CXX object CMakeFiles/float_calculator.dir/main.cpp.o
+# [100%] Linking CXX executable float_calculator
+# [100%] Built target float_calculator

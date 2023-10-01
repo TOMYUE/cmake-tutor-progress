@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/float.cpp" "CMakeFiles/mymath.dir/float.cpp.o" "gcc" "CMakeFiles/mymath.dir/float.cpp.o.d"
+  "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/my_math/float.cpp" "my_math/CMakeFiles/my_math.dir/float.cpp.o" "gcc" "my_math/CMakeFiles/my_math.dir/float.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -1,7 +1,4 @@
-#include "float.h"
-#include "print.h"
-
-#include <iostream>
+#include "main.h"
 
 int main() {
     // set value
