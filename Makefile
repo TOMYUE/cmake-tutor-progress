@@ -3,20 +3,36 @@
 # target: request
 #     rule
 
+# set variables in Makefile
+
+# Define the C++ compiler to use, you can use g++ as well
+CC = clang
+CXX = clang++
+
+# Define any compile-time flags
+CXXFLAGS = -Wall -Werror -g3 -O0 -std=c++17
+
+# The executable file that will be created
+TARGET = float_caculator
+
+# Define remove command and REMOVE flag
+RM = rm
+RMFLAG = -f
+
 all: main
+	./$(TARGET)
 
 float.o: float.cpp
-	clang++ -c float.cpp
+	$(CXX) -c float.cpp
 
 print.o: print.cpp
-	clang++ -c print.cpp
+	$(CXX) -c print.cpp
 
 main.o: main.cpp
-	clang++ -c main.cpp
+	$(CXX) -c main.cpp
 
 main: main.o float.o print.o
-	clang++ -o main main.o float.o print.o
-
+	$(CXX) $(CXXFLAGS) -o $(TARGET) main.o float.o print.o
 
 clean:
-	rm -f *.o main
+	$(RM) $(RMFLAG) *.o main
