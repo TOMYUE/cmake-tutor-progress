@@ -10,8 +10,10 @@ set(lib2 my_print) # my_print is a string variable
 
 message("[INFO]: Add subdirectory ${lib1}")
 add_subdirectory(my_math) # one subdirectory name 
+
 message("[INFO]: Add subdirectory ${lib2}")
 add_subdirectory(my_print) # another subdirectory name 
+
 message("[INFO]: subdirectory add done")
 
 # build target
@@ -22,13 +24,22 @@ message("[INFO]: build target float_calculator")
 target_link_libraries(float_calculator PRIVATE my_math my_print)
 message("[INFO]: link target float_calculator")
 
-# When cmake .. you will see the output contain the message you add to the CMakeLists.txt
-# > cmake ..
-# [INFO]: Add subdirectory my_math
-# [INFO]: Add subdirectory my_print
-# [INFO]: subdirectory add done
-# [INFO]: build target float_calculator
-# [INFO]: link target float_calculator
-# -- Configuring done
-# -- Generating done
-# -- Build files have been written to: /Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build
+# Unqoted and Quoted, used for dealing with lists and spaces
+message("========")
+# set(VAR aa bb cc)
+set(VAR aa;bb;cc)
+#set(VAR "aa" "bb" "cc")
+#set(VAR "aa bb cc")
+#set(VAR "aa;bb;cc")
+
+message(Unquoted: ${VAR})
+
+message(Quoted: "${VAR}")
+message("========")
+
+#  set(VAR aa bb cc) sets VAR to a list of three items: aa, bb, and cc. 
+# When you use ${VAR} unquoted, CMake treats it as a list of three separate items. 
+# When you use "${VAR}" quoted, CMake treats it as a single string with spaces between the items: aa;bb;cc.
+# The semicolon (;) is the default list separator in CMake. When you quote a list variable, CMake joins the items with semicolons.
+
+# To put it simple, when in "" it's a string, while not in "" it's a list.
