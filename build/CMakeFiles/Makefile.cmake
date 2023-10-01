@@ -11,6 +11,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.24.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.24.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.24.3/CMakeSystem.cmake"
+  "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/my_math/CMakeLists.txt"
+  "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/my_print/CMakeLists.txt"
   "/opt/local/share/cmake-3.24/Modules/CMakeCInformation.cmake"
   "/opt/local/share/cmake-3.24/Modules/CMakeCXXInformation.cmake"
   "/opt/local/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake"
@@ -43,8 +45,13 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "my_math/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "my_print/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/float_calculator.dir/DependInfo.cmake"
+  "my_math/CMakeFiles/my_math.dir/DependInfo.cmake"
+  "my_print/CMakeFiles/my_print.dir/DependInfo.cmake"
   )
