@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/lib")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -35,5 +35,33 @@ endif()
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/objdump")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/lib/include/my_math/float.h")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  file(INSTALL DESTINATION "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/lib/include/my_math" TYPE FILE FILES "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/my_math/include/my_math/float.h")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/lib/lib/my_math/libmy_math.a")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  file(INSTALL DESTINATION "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/lib/lib/my_math" TYPE STATIC_LIBRARY FILES "/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/my_math/libmy_math.a")
+  if(EXISTS "$ENV{DESTDIR}/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/lib/lib/my_math/libmy_math.a" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/lib/lib/my_math/libmy_math.a")
+    execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib" "$ENV{DESTDIR}/Users/tangyue/CSproj/Courses/CMake tutorial/cmake-tutor-progress/build/lib/lib/my_math/libmy_math.a")
+  endif()
 endif()
 
